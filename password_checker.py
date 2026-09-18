@@ -3,7 +3,7 @@ import re
 def is_strong_password(password):
   plen = len(password)
   lc = re.search(r'[a-z]', password)
-  uc = re.search(r'[A-Z'], password)
+  uc = re.search(r'[A-Z]', password)
   num = re.search(r'[0-9]', password)
   sym = re.search(r'[!@#$^&*]', password)
   strength = 0
